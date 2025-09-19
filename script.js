@@ -34,3 +34,29 @@ closeIcon.addEventListener("click", function(){
     sideBar.classList.add("close-sidebar");
     
 })
+
+  (function(){
+    emailjs.init("oFSQppOdzV9TRSO2W"); // Replace with your Public Key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let message = document.getElementById("message").value.trim();
+    if(message === ""){
+      alert("Write your thought first");
+      return;
+    }
+
+    emailjs.send("service_9derinp","template_160zd2e",{
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      message: message
+    }).then(function(){
+      alert("Message sent successfully!");
+    }, function(error){
+      alert("Failed to send. Please try again.");
+      console.log(error);
+    });
+  });
+
