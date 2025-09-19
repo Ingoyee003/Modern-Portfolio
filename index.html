@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifah's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
+
+
+
+        <header data-aos="fade-down" data-aos-duration="2000" position="fixed">
+            <div class="left">
+                <h2><span style="color: #72a1dea2;">Rifah's </span>Portfolio</h2>
+            </div>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <div class="box-icons">
+                <a href="https://www.youtube.com/channel/UCv3J1nP7Ty8cKK30jweCZCg" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://github.com/Ingoyee003" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mahmuda-islam-rifah-134363280/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>            
+        </header>
+
+
+
+        <style>
+    header {
+        position: fixed;
+    }
+</style>
+
+
+
+        <div class="sidebar">
+            <div class="close-icon">
+                <i class='bx bx-x'></i>
+            </div>
+            
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <div class="social-sidebar">
+                <a href="https://www.youtube.com/channel/UCv3J1nP7Ty8cKK30jweCZCg" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://github.com/Ingoyee003" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mahmuda-islam-rifah-134363280/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
+        </div>
+    
+        <section class="hero" id="hero">
+            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-info-title" >
+                    <i class='bx bxl-sketch'></i>
+                    Mobile App Dev || UI/UX Designer
+                </div>
+
+                <h2 data-aos="fade-right" data-aos-duration="3000">Hello! This is, </h2>
+                <h1 data-aos="fade-right" data-aos-duration="3000"> <span class="gradient"> Mahmuda Islam Rifah</span></h1>
+
+                <p>I’m a Mobile App Developer and UI/UX Designer with expertise in crafting engaging websites, intuitive mobile apps, and powerful software solutions. Take a look at my projects and skills to see how I turn ideas into seamless digital experiences.</p>
+
+                <button onclick="window.open('https://mail.google.com/mail/?view=cm&to=mahmudaislamrifa.com', '_blank')"><i class='bx bx-send' ></i> Contact Me</button>
+            </div>
+            
+            <div class="skills-video-box " >
+                <video class="skills-video autoBlur" autoplay loop muted plays-inline src="videos/hero-video.mp4"></video>
+            </div>
+        
+            <div class="scroll-down" onclick="scrollToNextSection()" aria-label="Scroll down" role="button"></div>
+        </section>
+
+
+
+         <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        function scrollToNextSection() {
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY + window.innerHeight / 2; // Current scroll position (middle of viewport)
+
+            // Find the next section to scroll to
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
+                const sectionTop = section.offsetTop;
+
+                // If the section is below the current scroll position, scroll to it
+                if (sectionTop > scrollPosition) {
+                    window.scrollTo({
+                        top: sectionTop,
+                        behavior: 'smooth'
+                    });
+                    break;
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+       <seaction class="info-section">
+            <h1 class="section-title autoDisplay">Hello,There👋</h1>
+            <div class="info-cards">
+                <div class="card ">
+                    <h1>Hi there, I'm Rifah</h1>
+                    <p>I’m a Mobile App Developer, UI/UX Designer, and Frontend Developer, creating intuitive and engaging websites, apps, and software.</p>
+                
+                    <img src="images/Ingoyee.png" alt="">
+                </div>
+
+                <div class="card">
+                    <h1>Tech Stack</h1>
+                    <p>I specialize in a wide range of languages, frameworks, and tools, enabling me to create robust and scalable applications with ease.</p>
+                
+                    <img src="images/grid2.png" alt="">
+                </div>
+
+                <div class="card">
+                    <h1>I’m very flexible with time zone communications & locations</h1>
+                    <p>I'm based in Chittagong, Bangladesh and open to remote work worldwide.</p>
+                
+                    <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
+
+                    <button onclick="window.open('https://mail.google.com/mail/?view=cm&to=mahmudaislamrifa.com', '_blank')"><i class='bx bx-send'></i> Contact Me</button>
+                </div>
+
+                <div class="card">
+                    <h1>My Passion for Coding</h1>
+                    <p>I love building apps and games through code, exploring new tools, and constantly improving my skills.</p>
+                
+                    <img src="images/grid4.png" alt="">
+                </div>
+            </div>
+        </seaction>
+
+
+
+
+
+        <section class="my-project" id="projects">
+            <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
+             <h2><span class="gradient">Mobile App Development</span></h2>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur mob" >
+                    <video loop id="projectVideo1 mob" src="videos/mob3.mp4"></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Social Media App <span class="gradient">Xetter</span></h1>
+                    <p>A social media app prototype that brings together the best features from multiple platforms into one seamless experience. Designed to simplify connections, enhance engagement, and give users everything they love about social media in a single app</p>
+                    <button onclick="window.open('https://github.com/Ingoyee003/XitterFinalTerm.git', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <div class="project-vidbox autoBlur mob" >
+                    <video loop id="projectVideo2 mob" src="videos/mob2.mp4"></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Squid Gammes <span class="gradient">Red Light Green Light</span></h1>
+                    <p>A thrilling game prototype inspired by Squid Game’s iconic Red Light, Green Light challenge. Designed with engaging visuals and smooth gameplay to recreate the tension and excitement in a fun digital experience.</p>
+                    <button onclick="window.open('https://github.com/Ingoyee003/Squid-Games.git', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-vidbox autoBlur mob">
+                    <video loop id="projectVideo3 mob" src="videos/mob1.mp4"></video>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1> A sarcasm app <span class="gradient">Love-o-Matic❤️</span></h1>
+                    <p>A lighthearted love app designed with humor to impress and convince my special one. It blends fun interactions, quirky features, and a touch of creativity to turn love into a playful experience.</p>
+                    <button onclick="window.open('https://github.com/Ingoyee003/Convince.git', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+
+
+
+            <h2><span class="gradient">UI/UX Designs</span></h2>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur" >
+                    <video loop id="projectVideo1" src="videos/p1.mp4"></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Modern <span class="gradient">Portfolio</span> Design</h1>
+                    <p>A modern and minimal UI design created to showcase my portfolio. It focuses on clean layouts, intuitive navigation, and a visually engaging style to highlight projects effectively.</p>
+                    <button onclick="window.open('https://www.figma.com/proto/IlQKDgeRosqRTrJ32RjNhN/Rifah-s-Portfolio?node-id=16-6&m=draw&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=16%3A6&t=rUFthUn8PRkToVBR-1', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo2" src="videos/p2.mp4"></video>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1> Demo <span class="gradient">Site for Interns</span></h1>
+                    <p>A sleek and user-friendly UI design for an intern-focused platform. Built with simplicity and clarity in mind, it helps interns explore opportunities, showcase skills, and connect with potential recruiters.</p>
+                    <button onclick="window.open('https://www.figma.com/proto/10BT2xhpM62xSADP1mfH2Z/glimpse-of-works?node-id=1-87&scaling=scale-down&content-scaling=fixed&t=c0XI53VcqldQkyTq-1', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo3" src="videos/p33.mp4"></video>
+                </div>
+                
+                <div class="project-info fadein-left">
+                    <h1>Demo <span class="gradient">Gaming</span>  prototype</h1>
+                    <p>An interactive gaming prototype inspired by Bubble Pop. Designed with playful visuals and smooth interactions to deliver a fun, engaging, and addictive user experience.</p>
+                   <button onclick="window.open('https://www.figma.com/proto/7AhQo2lg4wULvbSLKCmpLM/Relieved-Game-Prototype?node-id=1-55&scaling=contain&content-scaling=fixed&t=ybgzfqvwrHJIqWWc-1', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+
+ 
+           
+            <h2><span class="gradient">Web Development</span></h2>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur" >
+                    <video loop id="projectVideo1" src="videos/webDev1.mp4"></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Modern <span class="gradient">Food Delivery</span> Website</h1>
+                    <p>A modern food delivery website designed with an intuitive UI and smooth navigation. Built with responsive design to ensure a fast and delightful experience across all devices</p>
+                    <button onclick="window.open('http://fooddeliverys.surge.sh', '_blank')"><i class='bx bx-link-external' ></i> Website</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo2" src="videos/p2.mp4"></video>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1> Modern <span class="gradient">Portfolio</span> Website</h1>
+                    <p> personal portfolio website built with clean design and responsive layouts. Optimized for all devices, ensuring smooth navigation and a professional showcase of projects and skills.</p>
+                    <button onclick="window.open('https://www.figma.com/proto/10BT2xhpM62xSADP1mfH2Z/glimpse-of-works?node-id=1-87&scaling=scale-down&content-scaling=fixed&t=c0XI53VcqldQkyTq-1', '_blank')"><i class='bx bx-link-external' ></i> View Here</button>
+                </div>
+            </div>
+
+        </section>
+           
+
+
+
+        
+        <section class="skills-section" id="skills">
+            <h1 class="section-title autoDisplay">
+                My Skills 💪
+            </h1>
+            <div class="skills-box autoDisplay">
+                <img class="skills-image" src="images/digital brain (2).png" alt="">
+                <div class="Designer">
+                    <h1 class="gradient">Designer <i class='bx bx-laptop'></i></h1>
+                    <p>I design sleek mobile app UIs in XML and create stunning prototypes in Figma. Plus, I build responsive websites with HTML, CSS, and JavaScript—blending creativity with functionality for seamless user experiences.</p>    
+                </div>
+                
+                <div class="coder">
+                    <h1 class="gradient">Coder <i class='bx bx-code-block' ></i></h1>
+                    <p>I specialize in mobile app development with XML-based UI design and intuitive UI/UX prototypes in Figma. Alongside apps, I build responsive and visually engaging websites using HTML, CSS, and JavaScript—delivering seamless experiences across mobile and web.</p>
+                </div>
+
+                <div class="slider" reverse="true" style="
+                --width: 100px;
+                --height: 100px;
+                --quantity: 8;
+                ">
+                    <div class="list">
+                        <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="images/3.webp" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="images/4.webp" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="contact-section " id="contact">
+            <h1 class="section-title autoDisplay">
+                Let's talk & deal 🤝
+            </h1>
+
+            <div class="social-box autoBlur">
+                <a href="#"><i class='bx bxs-phone'></i> +8801309020760</a>
+                <a href="https://t.me/InGoYee" target="_blank"><i class='bx bxl-telegram' > Ingoyee</i> </a>
+                <a href="https://www.linkedin.com/in/mahmuda-islam-rifah-134363280/" target="_blank"><i class='bx bxl-linkedin-square' ></i> Mahmuda Islam Rifah</a>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/channel/UCv3J1nP7Ty8cKK30jweCZCg" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.facebook.com/ingoyee.003" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                </div>
+            </div>
+
+            
+            <div class="contact-box autoBlur">
+                <br>
+                <br>
+                <br>
+                <p>Full Name</p>
+                <input type="text" id="name" placeholder="Your Full name" required>
+
+                <p>Email Address</p>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <p>Your Message</p>
+                <input type="text" placeholder="Share your thought..." required>
+
+
+                <button>Send Message <i class='bx bx-mail-send'></i></button>
+                <p>Whether you're looking to build a new app, design or website, improve your existing platform, or bring a unique project to file. i'm here to help.</p>
+            
+            </div>
+        
+        </section> 
+
+
+
+
+
+
+        <section class="footer">
+            <h1>©️2025, Made with ❤️ by Rifah</h1>
+            <div class="box-icons">
+                <a href="https://www.youtube.com/channel/UCv3J1nP7Ty8cKK30jweCZCg" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://github.com/Ingoyee003" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mahmuda-islam-rifah-134363280/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </section>
+
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script >
+      AOS.init();
+    </script>
+</body>
+</html>
