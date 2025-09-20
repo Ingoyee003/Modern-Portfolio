@@ -664,7 +664,7 @@ header ul a:hover{
   /* CONTACT SECTION */
 .contact-section{
     width: 80%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     gap: 10%;
